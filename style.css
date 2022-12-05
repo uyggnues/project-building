@@ -2,9 +2,20 @@
     text-align: center;
 }
 
+#displayedQuestion {
+    height: 90vh;
+    back
+}
+
 #questionList {
-    overflow: scroll;
+    overflow: auto;
     height: 90vh;
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
+    background-color: rgb(88, 192, 252)
+}
+
+html {
+    background-color: blue;
 }
