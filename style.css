@@ -2,10 +2,12 @@
     text-align: center;
 }
 
-#displayedQuestion {
+/* #displayedQuestion {
+    text-align: center;
     height: 90vh;
-    back
-}
+    width: 60vh;
+    background-color:rgb(246, 227, 56);
+} */
 
 #questionList {
     overflow: auto;
