@@ -15,9 +15,9 @@
     display: flex;
     flex-direction: column;
     max-width: fit-content;
-    background-color: rgb(88, 192, 252)
+    background-color: rgb(170, 157, 37)
 }
 
 html {
-    background-color: blue;
+    background-color: rgb(95, 8, 27)
 }
