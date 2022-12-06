@@ -2,6 +2,7 @@
 // global Var
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("question")
+const darkModeToggle = document.querySelector("#toggle")
 
 //call back
 
