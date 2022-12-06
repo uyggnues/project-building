@@ -58,4 +58,6 @@ html {
 
 #toggle {
     text-align: center;
+    max-width: fit-content;
+    background-color: rgb(170, 157, 37)
 }

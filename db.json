@@ -1,0 +1,194 @@
+ {
+    "surveyQuestions": [
+      {
+        "id": 1,
+        "question": "Name A Christmas Show That Is On TV Every Year.",
+        "0": {
+            "ans":"Rudolph",
+            "pnt":25
+            },
+        "1":{
+            "ans":"Christmas Story",
+            "pnt": 15
+        },
+        "2":{
+            "ans":"Frosty",
+            "pnt": 12
+        },
+        "3":{
+            "ans":"Grinch",
+            "pnt": 11
+        },
+        "4":{
+            "ans":"A Wonderful Life",
+            "pnt": 10
+        },
+        "5":{
+            "ans":"Home Alone",
+            "pnt": 3
+        }
+    },
+    {"id":2,
+    "question": "Name An Instance When You Fake A Smile",
+    "0": {
+         "ans": "Having A Photo Taken",
+         "pnt":34
+        },
+    "1": {
+         "ans": "Hear A Bad Joke",
+         "pnt":18
+            },
+    "2": {
+         "ans": "Job Interview",
+         "pnt":13
+         },
+   "3": {
+        "ans": "Upset",
+        "pnt":13
+         },
+    "4": {
+        "ans": "Meeting New People",
+        "pnt":12
+        },  
+    "5": {
+        "ans": "Nervous",
+        "pnt":4
+        }
+         
+ 
+    },
+    {"id":3,
+    "question": "Name An Expression That Ends With The word \"House\"",
+    "0": {
+        "ans": "Fullhouse",
+        "pnt": 12
+        },
+    "1": {
+        "ans": "Whitehouse",
+        "pnt": 12
+            },
+    "2": {
+        "ans": "Outhouse",
+        "pnt": 7
+         },
+    "3": {
+        "ans": "Outhouse",
+        "pnt": 6
+        },
+    "4": {
+        "ans": "Open House",
+        "pnt": 4
+         },
+    "5": {
+        "ans": "Crack House",
+        "pnt": 3
+         }
+    },
+    {"id":4,
+    "question": "Name A Sport In Which Participants Use A Specific Kind Of Headwear",
+    "0": {
+        "ans": "Football",
+        "pnt": 36
+        },
+    "1": {
+        "ans": "Hockey",
+        "pnt": 18
+            },
+    "2": {
+        "ans": "Baseball",
+        "pnt": 18
+         },
+    "3": {
+        "ans": "Swimming",
+        "pnt": 10
+        },
+    "4": {
+        "ans": "Wrestling",
+        "pnt": 5
+         },
+    "5": {
+        "ans": "Boxing",
+        "pnt": 5
+         }
+    },
+ 
+    {"id":5,
+    "question": "If There Was A Gourmet Cafe For Dogs, Which Coffee Flavors Would Likely Be On The Menu?",
+    "0": {
+        "ans": "Beef",
+        "pnt": 43
+        },
+    "1": {
+        "ans": "Milkbone",
+        "pnt": 25
+            },
+    "2": {
+        "ans": "Bacon",
+        "pnt": 13
+         },
+    "3": {
+        "ans": "Chicken",
+        "pnt": 9
+        },
+    "4": {
+        "ans": "Cat",
+        "pnt": 5
+         }
+     },
+     {"id":6,
+     "question": "Name A Professional You May Come In Contact With, But Should Never Flirt With.",
+     "0": {
+         "ans": "Cop",
+         "pnt": 37
+         },
+     "1": {
+         "ans": "Boss",
+         "pnt": 25
+             },
+     "2": {
+         "ans": "Teacher",
+         "pnt": 14
+          },
+     "3": {
+         "ans": "Priest",
+         "pnt": 9
+         },
+     "4": {
+         "ans": "Lawyer",
+         "pnt": 5
+          }
+      },
+    {"id":7,
+    "question": "Name An Extra Something You Add To Your Mac And Cheese To Make It More Satisfying",
+    "0": {
+          "ans": "Ketchup",
+          "pnt": 33
+          },
+    "1": {
+          "ans": "Salt",
+          "pnt": 19
+              },
+    "2": {
+          "ans": "Extra Cheese",
+          "pnt": 14
+           },
+    "3": {
+          "ans": "Pepper",
+          "pnt": 11
+          },
+    "4": {
+          "ans": "Hot Dogs",
+          "pnt": 7
+           },
+    "5": {
+            "ans": "Tuna",
+            "pnt": 6
+             },
+    "6": {
+            "ans": "Ham",
+            "pnt": 4
+            }      
+       }
+    ]
+}
+
