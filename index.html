@@ -5,11 +5,15 @@
         <link href ="https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/FF3.json" rel = "stylesheet"/>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <script defer type="text/javascript" src="src/index.js"></script>
-    </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />    </head>
     <body>
         <header id="header">
             <h1 id="title">Family Feud</h1>
         </header>
+    </body>
+    <body id="darkMode">
+        <h2 id="toggle">toggle dark mode</h2>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
     </body>
     <body>
         <h2 id ="display">
@@ -17,8 +21,12 @@
                 <li class=>QUESTIONS</li>
                 <li>why did the chicken cross the road</li>
             </ul>
-            <label id="question">question</label>
-            <label id="answerForm">answer</label>
+            <label id="question">question</label> 
+            <form id="answerForm">
+                <label id="answer">Your Answer:</label>
+                <textarea id="answer"></textarea>
+                <button type="submit">guess answer</button>
+            </form>
         </h2>
     </body>
 </html>

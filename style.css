@@ -36,3 +36,23 @@ html {
     background-color: chocolate;
     margin: auto;
 }
+#answer {
+
+}
+
+#darkMode {
+    margin: 0%;
+    padding: 0%;
+}
+
+#toggleDark {
+    font-size: 14px;
+    cursor: pointer;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#toggle {
+    text-align: center;
+}
