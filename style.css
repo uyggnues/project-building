@@ -51,10 +51,8 @@ html {
     padding: 0%;
 }
 
-#toggleDark {
-    font-size: 30px;
-    cursor: pointer;
-    padding: 1250px;
+#button {
+    text-align: center;
 }
 
 #toggle {
