@@ -2,22 +2,37 @@
     text-align: center;
 }
 
-/* #displayedQuestion {
-    text-align: center;
-    height: 90vh;
-    width: 60vh;
-    background-color:rgb(246, 227, 56);
-} */
+#display {
+    box-sizing: border-box;
+    display: flex;
+     flex-direction: row;
+    height: 95vh;
+    width: 100%;
+    background-color:rgb(169, 0, 242);
+}
 
 #questionList {
+    text-align: center;
     overflow: auto;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
-    background-color: rgb(88, 192, 252)
+    max-width: 10%;
+    background-color: rgb(88, 192, 252);
+    margin: left;
 }
 
 html {
     background-color: blue;
+}
+
+#question {
+    margin: auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+#answerForm {
+    background-color: chocolate;
+    margin: auto;
 }
