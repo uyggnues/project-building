@@ -7,9 +7,7 @@ const questionList = document.querySelector("#questionList")
 function displayData (dataObj) {
     const li = document.createElement("li")
     li.innerText = dataObj.question
-    li.addEventListener("click", () => {
-        console.log('click')
-    })
+    li.addEventListener("click", () => console.log ("click"))
     questionList.appendChild(li)
 
 }
