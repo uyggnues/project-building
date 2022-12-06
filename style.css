@@ -1,0 +1,23 @@
+#title {
+    text-align: center;
+}
+
+/* #displayedQuestion {
+    text-align: center;
+    height: 90vh;
+    width: 60vh;
+    background-color:rgb(246, 227, 56);
+} */
+
+#questionList {
+    overflow: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    background-color: rgb(170, 157, 37)
+}
+
+html {
+    background-color: rgb(95, 8, 27)
+}
