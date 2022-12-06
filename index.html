@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Family Feud</title>
-        <link href ="https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/FF3.json" rel = "stylesheet"/>
+        <link href ="" rel = "stylesheet"/>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <script defer type="text/javascript" src="index.js"></script>
     </head>
@@ -10,12 +10,23 @@
         <header id="header">
             <h1 id="title">Family Feud</h1>
         </header>
-        <body>
-            <h2 id ="displayedQuestion">
-                <p>
-                    <ul id="questionList">QUESTIONS</ul>
-                </p>
-            </h2>
-        </body>
+    </body>
+    <body id="darkMode">
+        <h2 id="toggle">toggle dark mode</h2>
+        <button id="button" type="click">Dark Mode</button>
+    </body>
+    <body>
+        <h2 id ="display">
+            <ul id="questionList" style="list-style: none;">
+                <li>QUESTIONS</li>
+                <li>why did the chicken cross the road</li>
+            </ul>
+            <label id="question">question</label> 
+            <form id="answerForm">
+                <label id="answer">Your Answer:</label>
+                <textarea id="answerTextBubble"></textarea>
+                <button id="answerButton"type="submit">guess answer</button>
+            </form>
+        </h2>
     </body>
 </html>

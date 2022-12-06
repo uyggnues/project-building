@@ -1,12 +1,24 @@
-// global Var
-const questionLIst = document.querySelector("#questionList")
 
+// global Var
+const questionList = document.querySelector("#questionList")
+
+//call back
+
+function displayData (dataObj) {
+    const li = document.createElement("li")
+    li.innerText = dataObj.question
+    li.addEventListener("click", () => {
+        console.log('click')
+    })
+    questionList.appendChild(li)
+
+}
 
 
 const fetchData = () => {
     fetch("http://localhost:3000/surveyQuestions")
     .then((response) => response.json())
-    .then((data)=> console.log(data))
+    .then(data => data.forEach(displayData))
 }
 
 
