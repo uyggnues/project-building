@@ -3,10 +3,15 @@
 const questionList = document.querySelector("#questionList")
 
 //call back
-function displayData () {
+
+function displayData (dataObj) {
     const li = document.createElement("li")
-    li.innerText = data.question
+    li.innerText = dataObj.question
+    li.addEventListener("click", () => {
+        console.log('click')
+    })
     questionList.appendChild(li)
+
 }
 
 
