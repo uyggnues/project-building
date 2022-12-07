@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html">
+<html>
     <head>
         <title>Family Feud</title>
         <link href ="" rel = "stylesheet"/>
@@ -12,38 +12,23 @@
         </header>
     </body>
     <body id="darkMode">
-
-        <button id="button" type="click" onclick="toggleDark ()">Toggle Dark Mode</button>
+        
+        <button id="button" type="click" onclick='toggleDark ()'>Toggle Dark Mode</button>
+    </body>
 
     <header id ="display">                       
         <ul id="questionList" style="list-style: none;">
             <h1>Questions:</h1>                
         </ul>
-    </header>
-    <div class="card" id="questionDisplay">        
-          <h1 id="name">It's time for the Family Feud!</h1>
-          <ul id="ansList"></ul>         
-          <h4><span id="answers">Character's Votes</span></h4>
-          <form id="ans-form">
-            <input type="text" placeholder="guess answer" id="guess" name="SurveySays" />
-            <input type="submit" value="Guess Answer" />
-          </form>
-    </div>
-    <!-- <body>
-        <header id ="display">
-                       
-            <ul id="questionList" style="list-style: none;">
-                <h1>Questions:</h1>                
-            </ul>
-            <div>
-                <label id="question">It's Time For Family Feud!!!</label> 
-                <ul id="answerList"></ul>
-                <form id="answerForm">
-                    <label id="answer">Your Answer:</label>
-                    <textarea id="answerTextBubble"></textarea>
-                    <button id="answerButton"type="submit">guess answer</button>
-                </form>
+        <div id="board">
+            <div class="card" id="questionDisplay">        
+                  <h1 id="name">It's time for the Family Feud!</h1>
+                  <ul id="ansList"></ul>         
+                  <h4><span id="answers">Character's Votes</span></h4>
+                  <form id="ans-form">
+                    <input type="text" placeholder="guess answer" id="guess" name="SurveySays" />
+                    <input type="submit" value="Guess Answer" />
+                  </form>
             </div>
-        </header>
-    </body> -->
-</html>
+        </div>
+    </header>

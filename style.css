@@ -38,7 +38,7 @@
     margin: 20px; */
 }
 
-div {
+#board {
     
     background-color: cyan;
     width: 70%;
@@ -50,22 +50,25 @@ div {
 #answerForm {
     background-color: chocolate;
     margin: auto;
+    
 }
 #answer {
     height: 40vh;
     font-size: 30px;
 }
-#answerTextBubble {
+/* #answerTextBubble {
     height: 10px;
     width: 150px;
     font-size: 11px;
+} */
+#ans-form {
+    position:relative;
 }
 
 
 #button {
     text-align: center;
 }
-
 
 body {
     padding: 25px;
@@ -87,4 +90,36 @@ body {
     padding: 20%;
     margin: 20px;
   }
+#toggle {
+    text-align: center;
+    max-width: fit-content;
+    background-color: rgb(170, 157, 37)
+}
 
+.card {
+    text-align: center;
+    border: grey solid 3px;
+    padding: 1rem;
+    width: 80%;
+    height: relative;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
+  }
+  #questionDisplay {
+    font-size: 50px;
+  }
+
+  #name{
+    font-size: 50px
+  }
+
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
+
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
