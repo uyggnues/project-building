@@ -3,6 +3,7 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("question")
 const darkModeToggle = document.querySelector("#toggle")
+const answerList = document.querySelector("#answers")
 
 //call back
 
@@ -11,15 +12,24 @@ function displayData (dataObj) {
     li.innerText = dataObj.question
     // li.addEventListener("click", () => console.log ("click"))
     li.addEventListener("click", (() => handleClick(dataObj)))
-    questionList.appendChild(li)
     makeQuestion(dataObj)
+    questionList.appendChild(li)
+  
 
 }
 
 const makeQuestion = (dataObj) => {
-    debugger
+    // debugger
    qustLi = document.createElement('li')
-   questionList.innetrText = dataObj.ans.forEach(displayQuestions)
+//    debugger
+   dataObj.ans.forEach(displayAns)
+}
+
+const displayAns = (ansString) => {
+    const ansLi = document.createElement("li")
+    ansLi.innerText = ansString
+
+    console.log("disp")
 }
 
 
