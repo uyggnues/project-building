@@ -3,8 +3,16 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("question")
 const darkModeToggle = document.querySelector("#toggle")
+const answerForm = document.getElementById("answerTextBubble")
 
-//call back
+// call back
+// function handleSubmit (e) {
+//     e.preventDefualt()
+//     const answer = e.target.answer.value
+//     displayAnswer(answer)
+//     e.target.reset()
+// }
+
 function toggleDark () {
     var darkLightMode = document.body;
     darkLightMode.classList.toggle('dark-mode');
@@ -33,5 +41,5 @@ const fetchData = () => {
 }
 
 
-
+// answerForm.addEventListener('submit', handleSubmit())
 fetchData()
