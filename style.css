@@ -70,7 +70,6 @@
     text-align: center;
 }
 
-
 body {
     padding: 25px;
     background-color: white;
@@ -91,7 +90,6 @@ body {
     padding: 20%;
     margin: 20px;
   }
-
 #toggle {
     text-align: center;
     max-width: fit-content;
@@ -115,6 +113,11 @@ body {
   #name{
     font-size: 50px
   }
+
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
 
 #answerBoard{
     text-align: left;

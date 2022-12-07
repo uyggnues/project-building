@@ -3,9 +3,11 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
-const answerForm = document.getElementById("ans-form")
 // const questionCard = document.querySelector("#questionDisplay")
 const answerList = document.getElementById("answerList")
+const answerForm = document.querySelector("#ans-form")
+
+
 
 // call back
 function handleSubmit (e) {
@@ -32,6 +34,7 @@ function toggleDark () {
     darkLightMode.classList.toggle('dark-mode');
 }
 
+
 function displayData (dataObj) {
     const li = document.createElement("li")
     li.innerText = dataObj.question
@@ -43,7 +46,9 @@ function displayData (dataObj) {
     
 }
 
-
+const handleSUbmit = () => {
+    const ansLi = document.createElement("li")
+}
 
 
 const handleClick = (dataObj) => {
@@ -62,5 +67,9 @@ const fetchData = () => {
 }
 
 
+
+// answerForm.addEventListener('submit', handleSubmit())
+
+ 
 
 fetchData()
