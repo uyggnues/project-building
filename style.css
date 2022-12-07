@@ -62,7 +62,7 @@
     font-size: 11px;
 } */
 #ans-form {
-    bottom: 10px;
+    position:relative;
 }
 
 
@@ -103,7 +103,7 @@ body {
     border: grey solid 3px;
     padding: 1rem;
     width: 80%;
-    height: 10%;
+    height: relative;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52

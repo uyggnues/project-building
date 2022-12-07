@@ -10,6 +10,7 @@ const answerList = document.getElementById("answerList")
 // call back
 function handleSubmit (e) {
     e.preventDefault()
+    // debugger
     const answerLi = document.createElement("li")
     answerLi.innerText = e.target.guess.value
     answerList.appendChild(answerLi)
@@ -18,6 +19,12 @@ function handleSubmit (e) {
     // console.log(e.target.guess.value)
     // answerList.innerText = answer
     e.target.reset()
+
+    const fetchData = () => {
+        fetch("http://localhost:3000/surveyQuestions")
+        .then(response => response.json())
+        .then(data => data.forEach(handleSubmit))
+    }
 }
 
 function toggleDark () {
@@ -29,11 +36,11 @@ function displayData (dataObj) {
     const li = document.createElement("li")
     li.innerText = dataObj.question
     // li.addEventListener("click", () => console.log ("click"))
-    li.addEventListener("click", (() => handleClick(dataObj)))
     
+    li.addEventListener("click", (() => handleClick(dataObj)))
     questionList.appendChild(li)
-  
-
+    
+    
 }
 
 
@@ -42,7 +49,7 @@ function displayData (dataObj) {
 const handleClick = (dataObj) => {
     // debugger
     displayQuestion.innerText = dataObj.question
-
+    
 }
 
 
@@ -51,9 +58,9 @@ const fetchData = () => {
     .then((response) => response.json())
     // .then(data => console.log(data))
     .then(data => data.forEach(displayData))
+    answerForm.addEventListener('submit', handleSubmit)
 }
 
 
-answerForm.addEventListener('submit', handleSubmit)
 
 fetchData()
