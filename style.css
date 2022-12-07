@@ -22,10 +22,15 @@
     margin: left;
 }
 
-#html {
+/* #html {
     background-color: white;
     color: black;
-}
+}*/
+#darkMode {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+} 
 
 #question {
     margin: auto;
@@ -47,13 +52,6 @@
     font-size: 11px;
 }
 
-#darkMode {
-    margin: 0%;
-    padding: 0%;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
 
 #button {
     text-align: center;
