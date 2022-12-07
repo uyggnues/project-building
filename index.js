@@ -12,16 +12,22 @@ function displayData (dataObj) {
     // li.addEventListener("click", () => console.log ("click"))
     li.addEventListener("click", (() => handleClick(dataObj)))
     questionList.appendChild(li)
+    makeQuestion(dataObj)
 
 }
 
-const makeQuestion = () {
-    let qNum = 
+const makeQuestion = (dataObj) => {
+    debugger
+   qustLi = document.createElement('li')
+   questionList.innetrText = dataObj.ans.forEach(displayQuestions)
 }
+
+
 
 const handleClick = (dataObj) => {
     // debugger
     displayQuestion.innerText = dataObj.question
+
 }
 
 
