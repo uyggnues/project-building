@@ -15,6 +15,10 @@ function displayData (dataObj) {
 
 }
 
+const makeQuestion = () {
+    let qNum = 
+}
+
 const handleClick = (dataObj) => {
     // debugger
     displayQuestion.innerText = dataObj.question
@@ -27,7 +31,6 @@ const fetchData = () => {
     // .then(data => console.log(data))
     .then(data => data.forEach(displayData))
 }
-
-
+ 
 
 fetchData()
