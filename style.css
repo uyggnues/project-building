@@ -76,11 +76,11 @@ body {
   li {
     padding: 15px;
   }
-  #answerList {
+  /* #answerList {
     border: 15px transparent;
     padding: 20%;
     margin: 20px;
-  }
+  } */
 #toggle {
     text-align: center;
     max-width: fit-content;
@@ -91,7 +91,7 @@ body {
     text-align: center;
     border: grey solid 3px;
     padding: 1rem;
-    width: 80%;
+    width: relative;
     height: relative;
     display: inline-grid;
     margin: 1rem 2rem;
