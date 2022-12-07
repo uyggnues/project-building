@@ -3,7 +3,6 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
-// const questionCard = document.querySelector("#questionDisplay")
 const answerList = document.getElementById("ansList")
 const answerForm = document.querySelector("#ans-form")
 
@@ -11,15 +10,13 @@ const answerForm = document.querySelector("#ans-form")
 
 // call back
 function handleSubmit (e) {
+    debugger
     e.preventDefault()
-    // debugger
+    
     const answerLi = document.createElement("li")
     answerLi.innerText = e.target.guess.value
     answerList.appendChild(answerLi)
-    // debugger
-    const answer = e.target.guess.value
-    // console.log(e.target.guess.value)
-    // answerList.innerText = answer
+       
     e.target.reset()
 }
 //     const fetchData = () => {
@@ -38,18 +35,11 @@ function toggleDark () {
 function displayData (dataObj) {
     const li = document.createElement("li")
     li.innerText = dataObj.question
-    // li.addEventListener("click", () => console.log ("click"))
-    
+    // li.addEventListener("click", () => console.log ("click"))    
     li.addEventListener("click", (() => handleClick(dataObj)))
-    questionList.appendChild(li)
-    
+    questionList.appendChild(li)   
     
 }
-
-const handleSUbmit = () => {
-    const ansLi = document.createElement("li")
-}
-
 
 const handleClick = (dataObj) => {
     // debugger
@@ -57,18 +47,20 @@ const handleClick = (dataObj) => {
     
 }
 
-
 const fetchData = () => {
     fetch("http://localhost:3000/surveyQuestions")
     .then((response) => response.json())
     // .then(data => console.log(data))
-    .then(data => data.forEach(displayData))
-    answerForm.addEventListener('submit', handleSubmit)
+    .then((data) => {
+        data.forEach(displayData)
+    answerForm.addEventListener('submit', async function handleSubmit (data))
+    })
 }
 
 
 
-// answerForm.addEventListener('submit', handleSubmit())
+
+
 
  
 
