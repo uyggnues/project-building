@@ -5,6 +5,10 @@ const displayQuestion = document.getElementById("question")
 const darkModeToggle = document.querySelector("#toggle")
 
 //call back
+function toggleDark() {
+    let darkMode = document.html;
+    darkMode.classList.toggle('darkMode');
+}
 
 function displayData (dataObj) {
     const li = document.createElement("li")

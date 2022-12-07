@@ -22,8 +22,9 @@
     margin: left;
 }
 
-html {
-    background-color: blue;
+#html {
+    background-color: white;
+    color: black;
 }
 
 #question {
@@ -50,6 +51,8 @@ html {
     margin: 0%;
     padding: 0%;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 #button {
