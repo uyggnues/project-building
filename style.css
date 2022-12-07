@@ -8,7 +8,6 @@
      flex-direction: row;
     height: 95vh;
     width: 100%;
-    background-color:rgb(169, 0, 242);
 }
 
 #questionList {
@@ -17,45 +16,80 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    max-width: 10%;
+    max-width: 30%;
     background-color: rgb(88, 192, 252);
     margin: left;
-}
-
-html {
-    background-color: blue;
-}
-
-#question {
-    margin: auto;
-    background-color: aqua;
-    text-align: center;
-}
-
-#answerForm {
-    background-color: chocolate;
-    margin: auto;
-}
-#answer {
-    height: 40vh;
-    font-size: 30px;
-}
-#answerTextBubble {
-    height: 10px;
-    width: 150px;
-    font-size: 11px;
 }
 
 #darkMode {
     margin: 0%;
     padding: 0%;
     text-align: center;
+} 
+
+#question {
+    font-size: 50px;
+    margin: auto;
+    background-color: aqua;
+    text-align: center;
+    /* width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px; */
 }
+
+#board {
+    
+    background-color: cyan;
+    width: 70%;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#answerForm {
+    background-color: chocolate;
+    margin: auto;
+    
+}
+#answer {
+    height: 40vh;
+    font-size: 30px;
+}
+/* #answerTextBubble {
+    height: 10px;
+    width: 150px;
+    font-size: 11px;
+} */
+#ans-form {
+    position:relative;
+}
+
 
 #button {
     text-align: center;
 }
 
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  li {
+    padding: 15px;
+  }
+  #answerList {
+    border: 15px transparent;
+    padding: 20%;
+    margin: 20px;
+  }
 #toggle {
     text-align: center;
     max-width: fit-content;
@@ -66,9 +100,26 @@ html {
     text-align: center;
     border: grey solid 3px;
     padding: 1rem;
-    width: 15rem;
-    height: 25rem;
+    width: 80%;
+    height: relative;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52
   }
+  #questionDisplay {
+    font-size: 50px;
+  }
+
+  #name{
+    font-size: 50px
+  }
+
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
+
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
