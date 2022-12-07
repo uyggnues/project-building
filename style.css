@@ -8,7 +8,6 @@
      flex-direction: row;
     height: 95vh;
     width: 100%;
-    background-color:rgb(169, 0, 242);
 }
 
 #questionList {
@@ -17,15 +16,11 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    max-width: 10%;
+    max-width: 30%;
     background-color: rgb(88, 192, 252);
     margin: left;
 }
 
-/* #html {
-    background-color: white;
-    color: black;
-}*/
 #darkMode {
     margin: 0%;
     padding: 0%;
@@ -33,10 +28,20 @@
 } 
 
 #question {
+    font-size: 50px;
     margin: auto;
     background-color: aqua;
     text-align: center;
-    width: 300px;
+    /* width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px; */
+}
+
+div {
+    
+    background-color: cyan;
+    width: 70%;
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
@@ -71,4 +76,13 @@ body {
   .dark-mode {
     background-color: black;
     color: white;
+  }
+
+  li {
+    padding: 15px;
+  }
+  #answerList {
+    border: 15px transparent;
+    padding: 20%;
+    margin: 20px;
   }
