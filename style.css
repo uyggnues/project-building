@@ -47,20 +47,11 @@
     margin: 20px;
 }
 
-#answerForm {
-    background-color: chocolate;
-    margin: auto;
-    
-}
 #answer {
     height: 40vh;
     font-size: 30px;
 }
-/* #answerTextBubble {
-    height: 10px;
-    width: 150px;
-    font-size: 11px;
-} */
+
 #ans-form {
     position:relative;
 }
@@ -119,7 +110,3 @@ body {
     position: absolute;
 }
 
-#answerBoard{
-    text-align: left;
-    position: absolute;
-}
