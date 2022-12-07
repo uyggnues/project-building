@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
     <head>
         <title>Family Feud</title>
         <link href ="" rel = "stylesheet"/>
@@ -12,9 +12,9 @@
         </header>
     </body>
     <body id="darkMode">
-        
-        <button id="button" type="click">Toggle Dark Mode</button>
-    </body>
+
+        <button id="button" type="click" onclick="toggleDark ()">Toggle Dark Mode</button>
+
     <header id ="display">                       
         <ul id="questionList" style="list-style: none;">
             <h1>Questions:</h1>                
@@ -34,12 +34,15 @@
             <ul id="questionList" style="list-style: none;">
                 <h1>Questions:</h1>                
             </ul>
-            <label id="question">question</label> 
-            <form id="answerForm">
-                <label id="answer">Your Answer:</label>
-                <textarea id="answerTextBubble"></textarea>
-                <button id="answerButton"type="submit">guess answer</button>
-            </form>
+            <div>
+                <label id="question">It's Time For Family Feud!!!</label> 
+                <ul id="answerList"></ul>
+                <form id="answerForm">
+                    <label id="answer">Your Answer:</label>
+                    <textarea id="answerTextBubble"></textarea>
+                    <button id="answerButton"type="submit">guess answer</button>
+                </form>
+            </div>
         </header>
     </body> -->
 </html>

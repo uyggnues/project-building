@@ -3,10 +3,22 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
-// const questionCard = document.querySelector("#questionDisplay")
-const answerList = document.querySelector("#answers")
 
-//call back
+const answerForm = document.getElementById("answerTextBubble")
+
+// call back
+// function handleSubmit (e) {
+//     e.preventDefualt()
+//     const answer = e.target.answer.value
+//     displayAnswer(answer)
+//     e.target.reset()
+// }
+
+function toggleDark () {
+    var darkLightMode = document.body;
+    darkLightMode.classList.toggle('dark-mode');
+}
+
 
 function displayData (dataObj) {
     const li = document.createElement("li")
@@ -35,6 +47,8 @@ const fetchData = () => {
     // .then(data => console.log(data))
     .then(data => data.forEach(displayData))
 }
- 
+1
+
+// answerForm.addEventListener('submit', handleSubmit())
 
 fetchData()
