@@ -1,8 +1,9 @@
 
 // global Var
 const questionList = document.querySelector("#questionList")
-const displayQuestion = document.getElementById("question")
+const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
+
 const answerForm = document.getElementById("answerTextBubble")
 
 // call back
@@ -18,18 +19,25 @@ function toggleDark () {
     darkLightMode.classList.toggle('dark-mode');
 }
 
+
 function displayData (dataObj) {
     const li = document.createElement("li")
     li.innerText = dataObj.question
     // li.addEventListener("click", () => console.log ("click"))
     li.addEventListener("click", (() => handleClick(dataObj)))
+    
     questionList.appendChild(li)
+  
 
 }
+
+
+
 
 const handleClick = (dataObj) => {
     // debugger
     displayQuestion.innerText = dataObj.question
+
 }
 
 
@@ -39,7 +47,8 @@ const fetchData = () => {
     // .then(data => console.log(data))
     .then(data => data.forEach(displayData))
 }
-
+1
 
 // answerForm.addEventListener('submit', handleSubmit())
+
 fetchData()
