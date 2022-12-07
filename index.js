@@ -1,9 +1,11 @@
 
 // global Var
 const questionList = document.querySelector("#questionList")
-const displayQuestion = document.getElementById("question")
+const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
 const answerForm = document.getElementById("answerTextBubble")
+// const questionCard = document.querySelector("#questionDisplay")
+const answerList = document.querySelector("#answers")
 
 // call back
 // function handleSubmit (e) {
@@ -23,13 +25,19 @@ function displayData (dataObj) {
     li.innerText = dataObj.question
     // li.addEventListener("click", () => console.log ("click"))
     li.addEventListener("click", (() => handleClick(dataObj)))
+    
     questionList.appendChild(li)
+  
 
 }
+
+
+
 
 const handleClick = (dataObj) => {
     // debugger
     displayQuestion.innerText = dataObj.question
+
 }
 
 
@@ -42,4 +50,5 @@ const fetchData = () => {
 
 
 // answerForm.addEventListener('submit', handleSubmit())
+
 fetchData()
