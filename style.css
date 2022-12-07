@@ -59,13 +59,9 @@
     color: white;
     }li {
     padding: 15px;
-    }
-    /* #answerList {
-    border: 15px transparent;
-    padding: 20%;
-    margin: 20px;
-    } */
-    #toggle {
+  }
+
+#toggle {
     text-align: center;
     max-width: fit-content;
     background-color: rgb(170, 157, 37)
