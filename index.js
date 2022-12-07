@@ -4,7 +4,7 @@ const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
 // const questionCard = document.querySelector("#questionDisplay")
-const answerList = document.getElementById("answerList")
+const answerList = document.getElementById("ansList")
 const answerForm = document.querySelector("#ans-form")
 
 
@@ -21,13 +21,13 @@ function handleSubmit (e) {
     // console.log(e.target.guess.value)
     // answerList.innerText = answer
     e.target.reset()
-
-    const fetchData = () => {
-        fetch("http://localhost:3000/surveyQuestions")
-        .then(response => response.json())
-        .then(data => data.forEach(handleSubmit))
-    }
 }
+//     const fetchData = () => {
+//         fetch("http://localhost:3000/surveyQuestions")
+//         .then(response => response.json())
+//         .then(data => data.forEach(handleSubmit))
+//     }
+// }
 
 function toggleDark () {
     var darkLightMode = document.body;
