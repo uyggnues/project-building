@@ -3,17 +3,22 @@
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
-const answerForm = document.getElementById("answerTextBubble")
+const answerForm = document.getElementById("ans-form")
 // const questionCard = document.querySelector("#questionDisplay")
-const answerList = document.querySelector("#answers")
+const answerList = document.getElementById("answerList")
 
 // call back
-// function handleSubmit (e) {
-//     e.preventDefualt()
-//     const answer = e.target.answer.value
-//     displayAnswer(answer)
-//     e.target.reset()
-// }
+function handleSubmit (e) {
+    e.preventDefault()
+    const answerLi = document.createElement("li")
+    answerLi.innerText = e.target.guess.value
+    answerList.appendChild(answerLi)
+    // debugger
+    const answer = e.target.guess.value
+    // console.log(e.target.guess.value)
+    // answerList.innerText = answer
+    e.target.reset()
+}
 
 function toggleDark () {
     var darkLightMode = document.body;
@@ -49,6 +54,6 @@ const fetchData = () => {
 }
 
 
-// answerForm.addEventListener('submit', handleSubmit())
+answerForm.addEventListener('submit', handleSubmit)
 
 fetchData()
