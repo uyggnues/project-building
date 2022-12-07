@@ -38,7 +38,7 @@
     margin: 20px; */
 }
 
-div {
+#board {
     
     background-color: cyan;
     width: 70%;
@@ -50,16 +50,19 @@ div {
 #answerForm {
     background-color: chocolate;
     margin: auto;
+    
 }
 #answer {
-    
     height: 40vh;
     font-size: 30px;
 }
-#answerTextBubble {
+/* #answerTextBubble {
     height: 10px;
     width: 150px;
     font-size: 11px;
+} */
+#ans-form {
+    bottom: 10px;
 }
 
 
@@ -100,7 +103,7 @@ body {
     border: grey solid 3px;
     padding: 1rem;
     width: 80%;
-    height: 20%;
+    height: 10%;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52
@@ -112,6 +115,8 @@ body {
   #name{
     font-size: 50px
   }
-  
-  
 
+#answerBoard{
+    text-align: left;
+    position: absolute;
+}
