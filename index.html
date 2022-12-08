@@ -11,9 +11,17 @@
             <h1 id="title">Family Feud</h1>
         </header>
     </body>
-    <body id="darkMode">
-        
-        <button id="button" type="click" onclick='toggleDark ()'>Toggle Dark Mode</button>
+    <body id="background">
+        <label class="theme">
+            Choose a theme:
+            <select class="select" type="change" onselect="selectBackgroundColor()">
+                <option id="light" value="">Light</option>
+                <option id="dark" class="dark-mode">Dark</option>
+            </select>
+            <label type="text" id="pointCounter">Points: </label><div id="points"class="PointNum">0</div>
+            <label type="text" id="strikeCounter">Strikes: </label><div id="strikes"class="PointNum">0</div>
+        </label>
+        <div class="result"></div>
     </body>
 
     <header id ="display">                       
@@ -25,7 +33,7 @@
                   <h1 id="name">It's time for the Family Feud!</h1>
                 </div>
                 <ul id="ansList"></ul> 
-            <div>
+            <div id="form">
                 <h4><span id="answers">Survey Says!</span></h4>
                 <form id="ans-form">
                     <input type="text" placeholder="guess answer" id="guess" name="SurveySays" />
