@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     max-width: 30%;
-    background-color: rgb(88, 192, 252);
+    background-color: #cfe3e0;
     margin: left;
     }#darkMode {
     margin: 0%;
@@ -28,9 +28,9 @@
     border: 15px solid green;
     padding: 50px;
     margin: 20px; */
-    }#board {background-color: cyan;
+    }#board {background-color: #80aaa7;
     width: 70%;
-    border: 15px solid green;
+    border: 15px solid #cfe3e0;
     padding: 50px;
     margin: 20px;
     }#answerForm {
@@ -51,16 +51,17 @@
     text-align: center;
     }body {
     padding: 25px;
-    background-color: white;
+    background-color: #fafbfb;
     color: black;
     font-size: 25px;
     }.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #662c2c;
+    color: #444444
     }li {
     padding: 15px;
   }
 
+  
 #toggle {
     text-align: center;
     max-width: fit-content;
@@ -73,7 +74,7 @@
     height: relative;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #E04B52
+    box-shadow: 3px 4px #E4dacf
     
     }
     #questionDisplay {
