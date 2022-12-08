@@ -2,11 +2,10 @@
 // global Var
 const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
-const darkModeToggle = document.querySelector("#toggle")
 const answerList = document.getElementById("ansList")
 const answerForm = document.querySelector("#ans-form")
+let darkMode = document.getElementById("background")
 let jsonData = []
-
 
 
 // call back
@@ -23,10 +22,24 @@ function handleSubmit(e) {
     e.target.reset()
 }
 
-function toggleDark () {
-    var darkLightMode = document.body;
-    darkLightMode.classList.toggle('dark-mode');
-}
+// function selectBackgroundColor () {
+const select = document.querySelector(".select")
+    select.addEventListener("change", () => {
+        document.body.classList.toggle('dark')
+    })
+    // // const stylesheet = document.createElement('style')
+    // if ( select.innerText === 'Dark') {
+    //     darkMode = `
+    //     background-color: #662c2c;
+    //     color: #444444
+    //     `
+    // } else {
+    //     darkMode = `
+    //     background-color: #fafbfb;
+    //     color: black;
+    //     `
+    // }
+    
 
 function displayData (dataObj) {
     const li = document.createElement("li")
