@@ -4,6 +4,7 @@
 }
 .theme {
   color: black;
+
 }
 #display {
   box-sizing: border-box;
@@ -33,7 +34,8 @@
   background-color: aqua;
   text-align: center;
 }
-#board {background-color: #80aaa7;
+#board {
+  background-color: #80aaa7;
   width: 70%;
   border: 15px solid #cfe3e0;
   padding: 50px;
@@ -97,6 +99,14 @@ li {
 .select::selection{
   background-color: #fafbfb;
   color: black;
+}
+
+#pointCounter {
+  padding-left: 20%;
+}
+#strikeCounter {
+  padding-left: 20%;
+
 }
   /* .light-mode {
   }
