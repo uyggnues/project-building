@@ -108,6 +108,9 @@ li {
   padding-left: 20%;
 
 }
+.PointNum {
+  display: inline;
+}
   /* .light-mode {
   }
   .dark-mode {

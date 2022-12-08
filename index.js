@@ -4,6 +4,8 @@ const questionList = document.querySelector("#questionList")
 const displayQuestion = document.getElementById("questionDisplay")
 const answerList = document.getElementById("ansList")
 const answerForm = document.querySelector("#ans-form")
+const score = document.getElementById("points")
+const strikes = document.getElementById("strikes")
 let darkMode = document.getElementById("background")
 let jsonData = []
 
@@ -11,13 +13,23 @@ let jsonData = []
 // call back
 function handleSubmit(e) {    
     e.preventDefault()
-    debugger
+    // debugger
     const userGuess = e.target.guess.value
     const answerLi = document.createElement("li")
     const questionEquils = e.target.parentElement.parentElement.querySelector("#questionDisplay").innerText
     const questionObj = jsonData.find(surveyQuestions =>surveyQuestions.question === questionEquils)
     const points = questionObj ? questionObj.ans[userGuess] || 0 : 0 
     answerLi.innerText = userGuess + " - "  + points
+    let num = parseInt(score.innerText)
+    debugger
+    if (points === 0) {
+        let newStrike = parseInt(strikes.innerText)
+        newStrike++
+        strikes.innerText = newStrike
+    }
+    let newPoint = num + points
+    score.innerText = newPoint
+    // score.innerText = `Points: ${}`
     answerList.appendChild(answerLi)
     e.target.reset()
 }
@@ -51,6 +63,7 @@ function displayData (dataObj) {
 }
 
 const handleClick = (dataObj) => {
+    strikes.innerText = 0
     answerList.innerHTML = ""
         displayQuestion.innerText = dataObj.question
     }
