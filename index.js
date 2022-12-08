@@ -5,32 +5,27 @@ const displayQuestion = document.getElementById("questionDisplay")
 const darkModeToggle = document.querySelector("#toggle")
 const answerList = document.getElementById("ansList")
 const answerForm = document.querySelector("#ans-form")
+let jsonData = []
 
 
 
 // call back
-function handleSubmit (e) {
-    debugger
+function handleSubmit(e) {    
     e.preventDefault()
-    
+    debugger
     const answerLi = document.createElement("li")
-    answerLi.innerText = e.target.guess.value
+    const questionEquils = e.target.parentElement.parentElement.querySelector("#questionDisplay").innerText
+    const questionObj = jsonData.find(surveyQuestions =>surveyQuestions.question === questionEquils)
+    const points = questionObj ? questionObj.ans[e.target.guess.value] || 0 : 0 
+    answerLi.innerText = e.target.guess.value + " - "  + points
     answerList.appendChild(answerLi)
-       
     e.target.reset()
 }
-//     const fetchData = () => {
-//         fetch("http://localhost:3000/surveyQuestions")
-//         .then(response => response.json())
-//         .then(data => data.forEach(handleSubmit))
-//     }
-// }
 
 function toggleDark () {
     var darkLightMode = document.body;
     darkLightMode.classList.toggle('dark-mode');
 }
-
 
 function displayData (dataObj) {
     const li = document.createElement("li")
@@ -42,10 +37,9 @@ function displayData (dataObj) {
 }
 
 const handleClick = (dataObj) => {
-    // debugger
-    displayQuestion.innerText = dataObj.question
-    
-}
+    answerList.innerHTML = ""
+        displayQuestion.innerText = dataObj.question
+    }
 
 const fetchData = () => {
     fetch("http://localhost:3000/surveyQuestions")
@@ -53,11 +47,11 @@ const fetchData = () => {
     // .then(data => console.log(data))
     .then((data) => {
         data.forEach(displayData)
-    answerForm.addEventListener('submit', async function handleSubmit (data))
+    jsonData = data
     })
 }
 
-
+answerForm.addEventListener('submit',handleSubmit)
 
 
 
@@ -65,3 +59,5 @@ const fetchData = () => {
  
 
 fetchData()
+
+
