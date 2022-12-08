@@ -111,6 +111,14 @@ li {
 .PointNum {
   display: inline;
 }
+#form {
+  text-align: center;
+  position: relative;
+}
+#ansList {
+  height: 30%;
+  overflow:auto;
+}
   /* .light-mode {
   }
   .dark-mode {

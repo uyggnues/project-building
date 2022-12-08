@@ -21,7 +21,7 @@ function handleSubmit(e) {
     const points = questionObj ? questionObj.ans[userGuess] || 0 : 0 
     answerLi.innerText = userGuess + " - "  + points
     let num = parseInt(score.innerText)
-    debugger
+    // debugger
     if (points === 0) {
         let newStrike = parseInt(strikes.innerText)
         newStrike++
