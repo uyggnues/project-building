@@ -13,11 +13,12 @@ let jsonData = []
 function handleSubmit(e) {    
     e.preventDefault()
     debugger
+    const userGuess = e.target.guess.value
     const answerLi = document.createElement("li")
     const questionEquils = e.target.parentElement.parentElement.querySelector("#questionDisplay").innerText
     const questionObj = jsonData.find(surveyQuestions =>surveyQuestions.question === questionEquils)
-    const points = questionObj ? questionObj.ans[e.target.guess.value] || 0 : 0 
-    answerLi.innerText = e.target.guess.value + " - "  + points
+    const points = questionObj ? questionObj.ans[userGuess] || 0 : 0 
+    answerLi.innerText = userGuess + " - "  + points
     answerList.appendChild(answerLi)
     e.target.reset()
 }
