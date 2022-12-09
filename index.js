@@ -39,18 +39,6 @@ const select = document.querySelector(".select")
     select.addEventListener("change", () => {
         document.body.classList.toggle('dark')
     })
-    // // const stylesheet = document.createElement('style')
-    // if ( select.innerText === 'Dark') {
-    //     darkMode = `
-    //     background-color: #662c2c;
-    //     color: #444444
-    //     `
-    // } else {
-    //     darkMode = `
-    //     background-color: #fafbfb;
-    //     color: black;
-    //     `
-    // }
     
 
 function displayData (dataObj) {
