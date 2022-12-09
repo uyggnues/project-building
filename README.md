@@ -11,7 +11,7 @@ $ json-server --watch db.json
 Click on a question in the left column, and enter your group's guesses in the text box. The page will display all your answers and calculate your groups points and count the wrong guesses. See how many points you can score! Have Fun!
 
 ## Demo
-![familyfeud gif](vscode-local:/c%3A/Users/seung/OneDrive/Pictures/Saved%20Pictures/familyfeud%20gif.gif)
+![familyfeud gif](https://media.giphy.com/media/tbu8gUo9ICsDcsskzk/giphy.gif)
  
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
